@@ -1,0 +1,1 @@
+"use strict";var arrayBreadcrumbs=document.getElementsByClassName("range-breadcrumb__link");if(arrayBreadcrumbs.length>0)for(var i=0;i<arrayBreadcrumbs.length;i++)arrayBreadcrumbs[i].setAttribute("itemprop","item"),""==arrayBreadcrumbs[i].getAttribute("href")&&arrayBreadcrumbs[i].setAttribute("href",location.protocol.concat("//",location.hostname,location.pathname));

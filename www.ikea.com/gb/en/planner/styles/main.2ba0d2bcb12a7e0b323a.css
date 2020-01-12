@@ -1,0 +1,133 @@
+.planner__product-pip__planner {
+    padding: 1rem;
+    background: #f7f7f7;
+    font-size: .8rem;
+    position: relative
+}
+.planner__product-pip__planner-icon {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.planner-svg-icon {
+width: 1.5rem;
+height: 1.5rem;
+display: inline-block;
+vertical-align: middle;
+fill: #111;
+}
+.planner-svg-icon--200 {
+  width: 2rem;
+  height: 2rem;
+  }
+  
+.planner-svg-icon--100 {
+  width: 1rem;
+  height: 1rem;
+  }
+.planner__product-pip__planner-text {
+    padding-left: 2.25rem
+}
+.planner__product-pip__planner-headline,.planner__product-pip__planner-text {
+    font-size: .75rem
+}
+.planner__product-pip__planner-link-description {
+    margin-bottom: .25rem
+}
+.planner__product-pip__planner-link {
+    text-decoration: none;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.planner__product-pip__planner-link-icon {
+    vertical-align: middle;
+    fill: #407ab1;
+    margin-left: .25rem;
+}
+
+#readMore {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: none;
+  }
+  #dots {
+    display: none;
+  }
+  #plannerdescLine2 {
+    display: none;
+  }
+  #flash-content__wrapper {
+    text-align: center;
+  }
+  .breadcrumb {
+    display: flex;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    list-style: none;
+    padding: 0 1rem 1rem;
+    background: #fff;
+    color: #333;
+  }
+  
+  @media (min-width: 1024px){
+  .breadcrumb {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  }
+  .breadcrumb__item {
+    font-size: .75rem;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .breadcrumb__item:first-child, .breadcrumb__item:last-child {
+    flex-shrink: 0;
+  }
+  .breadcrumb__item a {
+    color: #407ab1;
+    background: transparent;
+    text-decoration: none;
+  }
+  ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .breadcrumb__item:not(:first-child):before {
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 100%;
+    width: 1rem;
+    height: .6rem;
+    background-image: url(https://www.ikea.com/de/de/resources/svg/arrow-right-base.e3f5ee8aa4e6d4a6.svg);
+    background-size: .6rem .6rem;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  #pax-application__mobile-text__wrapper, #besta-application__mobile-text__wrapper,
+  #complete-sleep-bed-configurator-application__mobile-text__wrapper,
+  #complete-sleep-comfort-guide-application__mobile-text__wrapper {
+    display: block;
+    text-align: center;
+  }
+  

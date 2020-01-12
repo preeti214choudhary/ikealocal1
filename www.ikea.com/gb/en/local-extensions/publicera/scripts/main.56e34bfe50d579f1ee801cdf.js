@@ -1,0 +1,1 @@
+"use strict";console.log("Configured host: https://www.ikea.com"),console.log("Configured siteFolder: gb/en");

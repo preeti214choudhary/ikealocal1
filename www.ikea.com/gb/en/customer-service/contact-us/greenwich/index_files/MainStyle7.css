@@ -1,0 +1,641 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
+/* ------------------- Standard Page Styles ----------------------- */
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+}
+
+.floating-divs::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Noto Sans', 'Roboto', Verdana, sans-serif;
+    font-size: 62.5%;
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    color: #222;
+    width: 100%;
+}
+
+ul, ol, dl {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+a img {
+    border: none;
+}
+
+img {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+td {
+    vertical-align: top;
+}
+
+/* ------------------- Page Layout Divs ----------------------- */
+
+
+.Error-Void
+{
+    height: 40px;
+}
+
+.Error-Panel {
+    width: 100%;
+    min-height: 40px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    padding: 10px 20px 10px 20px;
+    background-color: #FFCECE;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.central-page {
+    margin: 0px auto auto auto;
+    max-width: 1180px;
+}
+
+.left-column {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.right-column {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-div {
+    width: 100%;
+    padding: 10px;
+}
+
+.main-div-mobileonly {
+    width: 100%;
+    padding: 10px;
+}
+
+.iFrame-div {
+    width: 100%;
+    padding: 10px;
+    background-color: #EEE;
+    color: #222;
+}
+
+.rounded-div {
+    padding: 10px;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+}
+
+
+
+
+@media only screen and (min-width: 500px) {
+    /* For desktop: */
+
+    .main-div-mobileonly {
+        width: 100%;
+        padding: 10px;
+        display: none;
+    }
+
+    .iFrame-div {
+        width: 100%;
+        padding: 10px;
+        background-color: #FFF;
+        color: #CCC;
+    }
+}
+
+
+
+.summary-parent {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.summary-div {
+    width: 100%;
+    margin: 0px 10px auto auto;
+    text-align: center;
+    border: 1px solid #EEE;
+    padding: 10px;
+}
+
+.summary-section {
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.summary-font {
+    display: none;
+}
+
+
+@media only screen and (min-width: 980px) {
+    /* For desktop: */
+
+    .left-column {
+        max-width: 740px;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .right-column {
+        width: 200px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        float: right;
+    }
+
+    .summary-div {
+        width: 100%;
+        border: 1px solid #EEE;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .summary-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        display: inherit;
+        *display: inherit;
+    }
+
+    .summary-font {
+        display: inherit;
+    }
+
+}
+
+@media only screen and (min-width: 1120px) {
+    /* For desktop: */
+
+    .left-column {
+        max-width: 900px;
+        margin-bottom: 20px;
+        float: left;
+    }
+}
+
+/* ------------------- Other Layout Styles ----------------------- */
+
+
+.hide {
+    display: none;
+}
+
+.selection-box-main-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    align-items: flex-start;
+}
+
+.selection-box-main-flex {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 10px
+}
+
+@media only screen and (min-width: 420px) {
+
+    .selection-box-main-flex {
+        width: 150px;
+        margin-right: 5px;
+        margin-bottom: 10px
+    }
+}
+
+    .selection-box-main {
+        width: 130px;
+        float: left;
+        margin-right: 5px;
+        margin-bottom: 10px
+    }
+
+    .selection-box-title {
+        padding: 10px;
+        height: 60px;
+        margin: 0px auto 0px auto;
+        background-color: #EEE;
+    }
+
+    .selection-box-inner-nohover {
+        background-color: #FAFAFA;
+        width: 100%;
+        padding: 10px;
+        transition: background linear 0.3s;
+    }
+
+    .selection-box-inner {
+        background-color: #FAFAFA;
+        width: 100%;
+        padding: 10px;
+        transition: background linear 0.3s;
+    }
+
+        .selection-box-inner:hover {
+            background-color: #EEE;
+            width: 100%;
+            padding: 10px;
+        }
+
+
+    a.selection-box-link:link, a.selection-box-link:visited {
+        text-decoration: none;
+        color: #407AB1;
+    }
+
+    a.selection-box-link:hover, a.selection-box-link:active, a.selection-box-link:focus {
+        text-decoration: none;
+        color: #FF6600;
+    }
+
+
+    .selection-box-title-preferred {
+        padding: 10px;
+        height: 60px;
+        margin: 0px auto 0px auto;
+        background-color: #EEE;
+    }
+
+    .selection-box-inner-nohover-preferred {
+        background-color: #FAFAFA;
+        width: 100%;
+        padding: 10px;
+        transition: background linear 0.3s;
+    }
+
+
+
+    /* ------------------- Control Styles ----------------------- */
+
+
+    .btn, .btn:link, .btn:visited {
+        border-radius: 3px;
+        text-align: center;
+        display: inline-block;
+        line-height: 1.2;
+        text-decoration: none;
+        outline: 0;
+        background-color: #407ab1;
+        color: #fff;
+        border: 1px solid #407ab1;
+        padding: 6px;
+        max-width: 100%;
+        transition: background linear 0.3s;
+    }
+
+        .btn:hover, .btn:active, .btn:focus {
+            background-color: #3A6E9F;
+            cursor: pointer;
+        }
+
+
+
+    /*------------ All text boxes --------------------- */
+
+    .inputbox {
+        padding: 10px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box; /* Opera/IE 8+ */
+        border: 1px solid #CCC;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; /*for multi-line*/
+    }
+
+        .inputbox:hover {
+            border: 1px solid #999;
+        }
+
+        .inputbox:focus, .inputbox:active {
+            border: 1px solid #999;
+            outline: 0;
+            -webkit-box-shadow: 0 0 0 0.1875rem #b0cae2;
+            box-shadow: 0 0 0 0.1875rem #b0cae2;
+        }
+
+
+    /*------------ File upload boxes --------------------- */
+
+    input[type=file] {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+
+
+
+    /* ------------------- Font Styles ----------------------- */
+
+
+    /* ----- Standard (smartphone) ----- */
+
+    a:link, a:visited {
+        text-decoration: underline;
+        color: #407AB1;
+    }
+
+    a:hover, a:active, a:focus {
+        text-decoration: underline;
+        color: #FF6600;
+    }
+
+    .font-colour-black {
+        color: #000000;
+    }
+
+    .font-colour-red {
+        color: #E82C0C;
+    }
+
+    .font-colour-bright-red {
+        color: #FF0000;
+    }
+
+    .font-colour-green {
+        color: #178A00;
+    }
+
+    .font-colour-blue {
+        color: #407AB1;
+    }
+
+    .font-colour-clear-blue {
+        color: #037AE2;
+    }
+
+    .font-colour-orange {
+        color: #FF6600;
+    }
+
+    .font-colour-yellow {
+        color: #FFAC03;
+    }
+
+    .font-colour-bright-yellow {
+        color: #FFD000;
+    }
+
+    .font-colour-darker-grey {
+        color: #333;
+    }
+
+    .font-colour-dark-grey {
+        color: #444;
+    }
+
+    .font-colour-grey {
+        color: #666;
+    }
+
+    .font-colour-lighter-grey {
+        color: #CCC;
+    }
+
+    .font-colour-light-grey {
+        color: #999;
+    }
+
+    .font-bold {
+        font-weight: bold;
+    }
+
+    .font-italic {
+        font-style: italic;
+    }
+
+    .font-watermark {
+        color: #999999;
+    }
+
+
+    .font-pageheadline {
+        font-size: 30px;
+        line-height: 120%;
+        font-weight: bold;
+    }
+
+    .font-h1 {
+        font-size: 24px;
+        line-height: 100%;
+        font-weight: bold;
+    }
+
+    .font-h2 {
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: bold;
+    }
+
+    .font-h3 {
+        font-size: 17px;
+        line-height: 118%;
+        font-weight: bold;
+    }
+
+    .font-h4 {
+        font-size: 15px;
+        line-height: 134%;
+        font-weight: bold;
+    }
+
+    .font-lead {
+        font-size: 17px;
+        line-height: 124%;
+    }
+
+    .font-paragraph {
+        font-size: 13px;
+        line-height: 147%;
+    }
+
+    .font-small {
+        font-size: 11px;
+        line-height: 137%;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        /* ----- From 768px ----- */
+
+        .font-pageheadline {
+            font-size: 42px;
+            line-height: 100%;
+            font-weight: bold;
+        }
+
+        .font-h1 {
+            font-size: 30px;
+            line-height: 120%;
+            font-weight: bold;
+        }
+
+        .font-h2 {
+            font-size: 20px;
+            line-height: 111%;
+            font-weight: bold;
+        }
+
+        .font-h3 {
+            font-size: 17px;
+            line-height: 118%;
+            font-weight: bold;
+        }
+
+        .font-h4 {
+            font-size: 15px;
+            line-height: 120%;
+            font-weight: bold;
+        }
+    }
+
+    @media only screen and (min-width: 1440px) {
+
+        /* ----- From 1440px ----- */
+
+        .font-pageheadline {
+            font-size: 42px;
+            line-height: 100%;
+            font-weight: bold;
+        }
+
+        .font-h1 {
+            font-size: 36px;
+            line-height: 117%;
+            font-weight: bold;
+        }
+
+        .font-h2 {
+            font-size: 26px;
+            line-height: 116%;
+            font-weight: bold;
+        }
+
+        .font-h3 {
+            font-size: 22px;
+            line-height: 119%;
+            font-weight: bold;
+        }
+
+        .font-h4 {
+            font-size: 17px;
+            line-height: 130%;
+            font-weight: bold;
+        }
+    }
+
+    @media only screen and (min-width: 1920px) {
+
+        /* ----- From 1920px ----- */
+
+        .font-pageheadline {
+            font-size: 50px;
+            line-height: 100%;
+            font-weight: bold;
+        }
+
+        .font-h1 {
+            font-size: 42px;
+            line-height: 100%;
+            font-weight: bold;
+        }
+
+        .font-h2 {
+            font-size: 30px;
+            line-height: 120%;
+            font-weight: bold;
+        }
+
+        .font-h3 {
+            font-size: 22px;
+            line-height: 119%;
+            font-weight: bold;
+        }
+
+        .font-h4 {
+            font-size: 17px;
+            line-height: 130%;
+            font-weight: bold;
+        }
+    }
+
+
+    /* ------------------- Div Styles ----------------------- */
+
+
+    .blankrow {
+        height: 20px;
+    }
+
+    .blankrow15 {
+        height: 15px;
+    }
+
+    .blankrow10 {
+        height: 10px;
+    }
+
+    .blankrow5 {
+        height: 5px;
+    }
+
+    .hr {
+        height: 1px;
+        background-color: #EEE;
+    }
+
+    .hrthick {
+        height: 2px;
+        background-color: #EEE;
+    }
+
+    .hrdotted {
+        border-bottom-style: dotted;
+        border-bottom-width: 1px;
+        border-bottom-color: #EEE;
+    }

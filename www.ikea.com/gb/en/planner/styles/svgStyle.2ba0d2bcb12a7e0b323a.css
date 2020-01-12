@@ -1,0 +1,130 @@
+/* Default icon size */
+.leading-icon .svg-icon {
+  margin-right: 0.625rem;
+  vertical-align: top;
+}
+
+.leading-icon .svg-icon--100 {
+  margin-right: 0.3125rem;
+}
+
+.trailing-icon .svg-icon {
+  margin-left: 0.625rem;
+  vertical-align: top;
+}
+
+.trailing-icon .svg-icon--100 {
+  margin-left: 0.3125rem;
+}
+
+.svg-icon {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  vertical-align: middle;
+  fill: currentColor;
+  transition-property: transform, fill;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.svg-icon--100 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.svg-icon--150 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.svg-icon--200 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.svg-icon--250 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.svg-icon--300 {
+  width: 3rem;
+  height: 3rem;
+}
+
+@-webkit-keyframes icon-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes icon-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.svg-icon--rotate {
+  -webkit-animation: icon-rotate 1.5s linear infinite;
+          animation: icon-rotate 1.5s linear infinite;
+}
+
+.svg-icon--rotate-45 {
+  transform: rotate(45deg);
+}
+
+.svg-icon--rotate-minus-45 {
+  transform: rotate(-45deg);
+}
+
+.svg-icon--rotate-135 {
+  transform: rotate(135deg);
+}
+
+.svg-icon--rotate-minus-135 {
+  transform: rotate(-135deg);
+}
+
+.svg-icon--rotate-180 {
+  transform: rotate(180deg);
+}
+
+.svg-icon--rotate-minus-180 {
+  transform: rotate(-180deg);
+}
+
+.svg-icon--white {
+  fill: #ffffff;
+}
+
+.svg-icon--black {
+  fill: #111111;
+}
+
+.svg-icon--grey {
+  fill: #484848;
+}
+
+.svg-icon [class*="white"],
+.svg-icon g[class*="white"],
+.svg-icon path[class*="white"] {
+  fill: #ffffff;
+}
+
+a:hover .svg-icon--black,
+a:hover .svg-icon--grey, a:active .svg-icon--black,
+a:active .svg-icon--grey, a:focus .svg-icon--black,
+a:focus .svg-icon--grey {
+  fill: #333333;
+}
+
+a:hover .svg-icon--white, a:active .svg-icon--white, a:focus .svg-icon--white {
+  fill: #ffffff;
+}
